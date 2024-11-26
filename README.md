@@ -4,7 +4,7 @@
 
 
 
-<a name="teachnicalStack"></a>
+
 ## 🛠️ Technical Stack
 
 
@@ -15,3 +15,6 @@
 | **📦 Package Manager** | npm                                                 |
 | **💻 Environment**  | Development with VS Code                                |
 
+## 🌟 Live Website
+
+**Link:** [Personal-portfolio](https://trinetra110.github.io/personal-portfolio/)
