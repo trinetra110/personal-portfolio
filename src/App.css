@@ -1,0 +1,32 @@
+/* Custom App-wide Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  background-color: #1f1f4d;
+  color: white;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card-content {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* For rotating card effect */
+.card:hover {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}

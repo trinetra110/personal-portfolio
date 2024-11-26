@@ -1,0 +1,201 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    120deg,
+    #000000 0%,
+    #0066cc 50%,
+    #000000 100%
+  ); /* Black to darker blue gradient */
+  color: #f0f0f0;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Layout & Structure */
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar styling */
+.MuiAppBar-root {
+  box-shadow: none;
+}
+
+/* Hero Section with Gradient */
+#hero-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(
+    120deg,
+    #000000 0%,
+    #0066cc 50%,
+    #000000 100%
+  ); /* Black to darker blue gradient */
+  color: #fff;
+}
+
+#hero-section h2 {
+  font-weight: bold;
+  color: #fff;
+}
+
+#hero-section h5 {
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* Skills Section */
+#skills {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000000; /* Black background */
+}
+
+#skills h4 {
+  margin-bottom: 20px;
+}
+
+.skill-card {
+  background: #1f1f4d;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+/* Project Section */
+#projects {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000000; /* Black background */
+}
+
+#projects h4 {
+  margin-bottom: 20px;
+}
+
+.project-card {
+  background: #2f2f5d;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-button {
+  margin-top: 10px;
+  background: #0066cc; /* Darker blue for buttons */
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000000; /* Black background */
+}
+
+#contact h4 {
+  margin-bottom: 20px;
+}
+
+/* Education Section */
+#education {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000000; /* Black background */
+}
+
+#education h4 {
+  margin-bottom: 20px;
+}
+
+.education-card {
+  background: #1f1f4d;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* For screens smaller than 600px (mobile screens) */
+/* Global styles for the Timeline */
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For larger screens (tablets and desktops) */
+@media (min-width: 600px) {
+  .timeline-item {
+    display: flex;
+    justify-content: space-between; /* Align high school and college on opposite sides */
+    flex-direction: row; /* Align items horizontally */
+    text-align: left; /* Align text to the left */
+  }
+
+  .MuiTimelineItem-root {
+    text-align: center;
+  }
+}
+
+/* For mobile screens (less than 600px) */
+@media (max-width: 600px) {
+  .timeline-item {
+    display: block;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px;
+  }
+
+  .MuiTimelineItem-root {
+    text-align: left;
+  }
+}
+
+
+/* About Section */
+#about {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000000; /* Black background */
+}
+
+#about h4 {
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.MuiButton-root {
+  background: #0066cc; /* Darker blue for buttons */
+  color: #fff;
+  text-transform: none;
+}
+
+.MuiButton-root:hover {
+  background: #0055a2; /* Slightly darker blue on hover */
+}
