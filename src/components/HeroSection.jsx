@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div style={{ textAlign: "center", padding: "100px 20px" }}>
       <Avatar
-        src="/Profile_pic.jpg"
+        src="/personal-portfolio/Profile_pic.jpg"
         alt="Ayan Mondal"
         sx={{ width: 150, height: 150, margin: "0 auto" }}
       />
