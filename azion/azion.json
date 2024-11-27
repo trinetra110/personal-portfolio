@@ -1,36 +1,36 @@
 {
-  "name": "personal-portfolio-20241127075440",
-  "bucket": "personal-portfolio-20241127075440",
+  "name": "my-personal-portfolio",
+  "bucket": "my-personal-portfolio",
   "preset": "react",
   "env": "production",
-  "prefix": "20241127075439",
+  "prefix": "20241127090030",
   "not-first-run": true,
   "function": {
-    "id": 32849,
+    "id": 32852,
     "name": "__DEFAULT__",
     "file": ".edge/worker.js",
     "args": "azion/args.json",
-    "instance-id": 31567,
+    "instance-id": 31570,
     "instance-name": "__DEFAULT__",
     "cache-id": 0
   },
   "application": {
-    "id": 1732690213,
+    "id": 1732690218,
     "name": "__DEFAULT__"
   },
   "domain": {
-    "id": 1732696178,
-    "name": "personal-portfolio-20241127075440",
-    "domain_name": "dg9ga5bxel.map.azionedge.net",
-    "url": "https://dg9ga5bxel.map.azionedge.net"
+    "id": 1732696181,
+    "name": "my-personal-portfolio",
+    "domain_name": "mzkllfo1i2.map.azionedge.net",
+    "url": "https://mzkllfo1i2.map.azionedge.net"
   },
   "rt-purge": {
     "purge_on_publish": true
   },
   "origin": [
     {
-      "origin-id": 168446,
-      "origin-key": "fbb02ff0-1798-4f5b-b7af-891be5f639fd",
+      "origin-id": 168452,
+      "origin-key": "4453441b-57c6-4f4d-8aa6-3526570f9d12",
       "name": "origin-storage-default"
     }
   ],
@@ -38,17 +38,17 @@
     "created": false,
     "rules": [
       {
-        "id": 326777,
+        "id": 326790,
         "name": "Set Storage Origin for All Requests",
         "phase": "request"
       },
       {
-        "id": 326778,
+        "id": 326791,
         "name": "Deliver Static Assets",
         "phase": "request"
       },
       {
-        "id": 326779,
+        "id": 326792,
         "name": "Redirect to index.html",
         "phase": "request"
       }
