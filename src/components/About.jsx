@@ -57,7 +57,7 @@ const About = () => {
       <Button
         variant="contained"
         color="primary"
-        href="https://drive.google.com/file/d/1wr8FK2dQTsLG1I2Mw9KZcQehY3U_2hnK/view?usp=sharing"
+        href="https://drive.google.com/file/d/1ikR37mqfCxEGIles1pG-af0EpVhj7l6S/view?usp=sharing"
         target="_blank"
         style={{ marginTop: "20px", backgroundColor: "#08f" }}
       >
