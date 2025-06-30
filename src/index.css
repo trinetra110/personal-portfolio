@@ -1,17 +1,42 @@
 /* Global styles */
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Roboto", sans-serif;
   background: linear-gradient(
-    120deg,
-    #000000 0%,
-    #0066cc 50%,
-    #000000 100%
-  ); /* Black to darker blue gradient */
-  color: #f0f0f0;
-  height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+    135deg,
+    #0a0a0a 0%,
+    #1a1a2e 25%,
+    #16213e 50%,
+    #0f3460 75%,
+    #0a0a0a 100%
+  );
+  color: #e8e8e8;
+  line-height: 1.6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #00d4ff, #0099cc);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #0099cc, #0066cc);
 }
 
 a {
@@ -19,183 +44,143 @@ a {
   color: inherit;
 }
 
-/* Layout & Structure */
 #root {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Enhanced section styling */
+section {
+  position: relative;
+  overflow: hidden;
 }
 
-/* Navbar styling */
-.MuiAppBar-root {
-  box-shadow: none;
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.03) 0%, transparent 70%);
+  pointer-events: none;
 }
 
-/* Hero Section with Gradient */
-#hero-section {
-  padding: 100px 20px;
-  text-align: center;
-  background: linear-gradient(
-    120deg,
-    #000000 0%,
-    #0066cc 50%,
-    #000000 100%
-  ); /* Black to darker blue gradient */
-  color: #fff;
+/* Glassmorphism effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-#hero-section h2 {
-  font-weight: bold;
-  color: #fff;
-}
-
-#hero-section h5 {
-  margin-top: 20px;
-  color: #fff;
-}
-
-/* Skills Section */
-#skills {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #000000; /* Black background */
-}
-
-#skills h4 {
-  margin-bottom: 20px;
-}
-
-.skill-card {
-  background: #1f1f4d;
-  color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
-}
-
-.skill-card:hover {
-  transform: scale(1.05);
-}
-
-/* Project Section */
-#projects {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #000000; /* Black background */
-}
-
-#projects h4 {
-  margin-bottom: 20px;
-}
-
-.project-card {
-  background: #2f2f5d;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-.project-button {
-  margin-top: 10px;
-  background: #0066cc; /* Darker blue for buttons */
-}
-
-/* Contact Section */
-#contact {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #000000; /* Black background */
-}
-
-#contact h4 {
-  margin-bottom: 20px;
-}
-
-/* Education Section */
-#education {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #000000; /* Black background */
-}
-
-#education h4 {
-  margin-bottom: 20px;
-}
-
-.education-card {
-  background: #1f1f4d;
-  color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* For screens smaller than 600px (mobile screens) */
-/* Global styles for the Timeline */
-.timeline-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* For larger screens (tablets and desktops) */
-@media (min-width: 600px) {
-  .timeline-item {
-    display: flex;
-    justify-content: space-between; /* Align high school and college on opposite sides */
-    flex-direction: row; /* Align items horizontally */
-    text-align: left; /* Align text to the left */
+/* Enhanced animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-
-  .MuiTimelineItem-root {
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* For mobile screens (less than 600px) */
-@media (max-width: 600px) {
-  .timeline-item {
-    display: block;
-    text-align: left; /* Align text to the left */
-    margin-bottom: 20px;
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
   }
-
-  .MuiTimelineItem-root {
-    text-align: left;
+  50% {
+    transform: translateY(-10px);
   }
 }
 
-
-/* About Section */
-#about {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #000000; /* Black background */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
+  }
 }
 
-#about h4 {
-  margin-bottom: 20px;
+/* Typography enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff, #b3d9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-/* Button Styling */
-.MuiButton-root {
-  background: #0066cc; /* Darker blue for buttons */
-  color: #fff;
+/* Button enhancements */
+.enhanced-button {
+  position: relative;
+  background: linear-gradient(135deg, #00d4ff, #0099cc);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  color: white;
+  font-weight: 600;
   text-transform: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
-.MuiButton-root:hover {
-  background: #0055a2; /* Slightly darker blue on hover */
+.enhanced-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.enhanced-button:hover::before {
+  left: 100%;
+}
+
+.enhanced-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.4);
+}
+
+/* Card hover effects */
+.hover-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.hover-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .hover-card:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading {
+  animation: pulse 2s infinite;
 }
