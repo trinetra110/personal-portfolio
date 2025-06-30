@@ -2,22 +2,34 @@ import { Grid, Card, CardContent, Typography, Button } from "@mui/material";
 
 const projects = [
   {
-    name: "Secure Pass",
+    name: "Civix",
     description:
-      "A full-stack web application that helps users check password strength, generate strong passwords, and manage secret texts securely in a database.",
-    githubLink: "https://github.com/trinetra110/secure-pass",
+      "A full-stack grievance management system using React, Appwrite, and Hugging Face AI, featuring Google OAuth & email/password authentication with JWT-based security. Designed role-based dashboards (User/Admin) with real-time status tracking (Pending → Resolved/Rejected). Integrated AI-powered grievance formatting and file uploads (5 files/grievance) via Appwrite Storage. Built a responsive UI with Tailwind CSS, ensuring secure workflows with input validation and protected routes. Reduced manual processing time by 30% through automated status updates.",
+    githubLink: "https://github.com/trinetra110/civix",
+  },
+  {
+    name: "PixelGuard",
+    description:
+      "An image integrity verification tool using Python, Pillow (PIL), and Hashlib to ensure image authenticity and detect " +
+      "tampering through SHA-256 hashing, metadata analysis, and pixel-level comparison. Implemented pytest unit tests covering " +
+      "hash generation, metadata extraction, and pixel-diff detection for reliability. Supports JPG, PNG, BMP, and WEBP formats, " +
+      "enhancing integrity verification accuracy by 95%, making it valuable for cybersecurity and digital forensics.",
+    githubLink: "https://github.com/trinetra110/PixelGuard",
+  },
+  {
+    name: "ChronoCrypt",
+    description:
+      "A powerful CLI-based encryption tool that allows users to create time-locked secure notes that self-destruct after a specified " +
+      "duration. Validated cryptographic integrity with pytest unit tests for AES-256 encryption/decryption, expiry enforcement, and " +
+      "secure file deletion. Uses AES-256 (CBC mode) to securely store sensitive information, ensuring notes are unreadable beyond " +
+      "their expiry time.",
+    githubLink: "https://github.com/trinetra110/ChronoCrypt",
   },
   {
     name: "Weather CLI Tool",
     description:
       "A command-line interface tool that provides weather, AQI, and location data using APIs, designed to give developers quick weather status from the terminal.",
     githubLink: "https://github.com/trinetra110/weather-cli-tool",
-  },
-  {
-    name: "Nomo Durga",
-    description:
-      "An open-source frontend application that lists and provides navigation to famous Durga Puja pandals in Kolkata, helping users explore locations during the festival.",
-    githubLink: "https://github.com/trinetra110/nomo-durga",
   },
 ];
 
