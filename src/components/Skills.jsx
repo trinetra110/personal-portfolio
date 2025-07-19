@@ -73,7 +73,7 @@ const skills = {
   languages: ["C", "C++", "Python", "JavaScript"],
   frontend: ["React.js", "HTML", "CSS", "Bootstrap"],
   backend: ["Node.js", "Express.js", "REST APIs"],
-  tools: ["Git, GitHub", "AWS", "Firebase", "Linux", "Windows"],
+  tools: ["Git, GitHub", "AWS", "Firebase", "Linux"],
   databases: ["MongoDB", "MySQL", "PostgreSQL"],
   design: ["Canva", "Figma"],
 };

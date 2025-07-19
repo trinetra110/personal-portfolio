@@ -108,6 +108,14 @@ const projects = [
     highlights: ["30% faster processing", "AI-powered", "Real-time tracking"],
   },
   {
+    name: "Fire Evacuation Simulator",
+    description:
+      "Terminal-based emergency simulation in C++ showcasing real-time fire spread and adaptive agent evacuation using A*, Dijkstra, BFS, and hybrid pathfinding. Achieved 81% median evacuation success rate.",
+    technologies: ["C++", "A*", "Dijkstra", "BFS", "OOP"],
+    githubLink: "https://github.com/trinetra110/fire-evacuation-simulator",
+    highlights: ["81% success rate", "Adaptive AI", "Pathfinding algorithms"],
+  },
+  {
     name: "PixelGuard",
     description:
       "Advanced image integrity verification tool using cryptographic hashing and pixel-level analysis. Supports multiple formats with 95% accuracy in detecting tampering for cybersecurity applications.",
