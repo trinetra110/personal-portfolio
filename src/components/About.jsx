@@ -196,7 +196,7 @@ const About = () => {
                 </Box>
 
                 <EnhancedButton
-                  href="https://drive.google.com/file/d/1XAtAhSCHW78Fv7vNJ3KCKLx9p17a_JZr/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1c765HdQQFMOqeQfAGF1HjY7uXFO5qiRc/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   startIcon={<Download />}
